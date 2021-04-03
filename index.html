@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas1 Kecerdasan Buatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <table>
+    <td>
+
+    <div class="container">
+    <h1 class="judul">"Kecerdasan Buatan"</h1>
+    <ol>
+        <li class="point1">Sistem Kecerdasan Buatan</li>
+        <img class="materi2" src="./images/materi2.png">
+        <ul>
+            <li>Bagian utama yaitu basis pengetahuan dan motor
+                inferensi.</li>
+                <li>Basis pengetahuan (Knowledge Base) : Berisi faktafakta, teori, pemikiran & hubungan antara satu
+                    dengan lainnya.</li>
+                    <li>Motor inferensi (Inference Engine) : Kemampuan
+                        menarik kesimpulan berdasarkan basis
+                        pengetahuan</li>
+                        <li>Pada gambar, input yang diberikan pada sistem yang
+                            menggunakan kecerdasan buatan berupa masalah.</li>
+                            <li>Sistem harus dilengkapi dengan sekumpulan
+                                pengetahuan yang ada pada basis pengetahuan.</li>
+                                <li>Sistem harus memiliki motor inferensi agar
+                                    mampu mengambil kesimpulan berdasarkan fakta
+                                    atau pengetahuan.
+                                    </li>
+                                    <li>Output yang diberikan berupa solusi masalah
+                                        sebagai hasil dari inferensi.</li>
+        </ul>
+        <li class="point2">Mendefinisikan Masalah</li>
+        <ul>
+            <li>Mendefinisikan masalah sebagai pencari ruang stata.</li>
+            <li>Untuk membuat deskripsi formal dari permasalahan,
+                harus dilakukan beberapa hal, diantaranya :</li>
+        </ul>
+        <ol>
+            <li>Definisikan ruang stata yang memuat semua
+                konfigurasi yang mungkin dari objek yang terkait (dan
+                mungkin beberapa yg tidak mungkin). Hal ini, tentu
+                saja mungkin untuk mendefiniskan ruang stata
+                dengan jumlah stata yang tidak terbatas.</li>
+                <li>Tentukan satu atau beberapa stata yang menyatakan
+                    keadaan awal dari masalah, disebut initial states.</li>
+                    <li>Tentukan satu atau beberapa stata yang dapat
+                        diterima sebagai keadaan akhir (solusi), disebut
+                        goal states.</li>
+                        <li>Tentukan sejumlah aturan yang menentukan aksi
+                            yang diperkenankan, hal ini mencakup beberapa
+                            hal sebagi berikut :</li>
+        
+        <ol type="a">
+            <li>Apa asumsi non stata yang ditampilkan dalam
+                deskripsi masalah non formal? akan menentukan
+                yang termasuk dan tidak termasuk stata</li>
+                <li>Seberapa luas aturan harus dibuat ? dapat
+                    menentukan aturan diberlakukan untuk stata mana
+                    saja.
+                    </li>
+                    <li>Berapa banyak pekerjaan yang diperlukan untuk
+                        menyelesaikan masalah harus disusun dan
+                        dimasukkan ke dalam aturan ? akan menentukan
+                        jumlah baris aturan</li>
+                    </ol>
+        </ol>
+        <li class="point3">Sistem Produksi</li>
+            <ul> 
+              <li>Sistem produksi terdiri dari 4 bagian:</li>
+            </ul>
+            <ol>
+                <li>Sejumlah aturan, dimana tiap aturan memiliki sisi
+                    kiri yang menyatakan bentuk yang dapat
+                    digunakan dan sisi kanan yang menyatakan hasil
+                    operasi jika aturan diaplikasikan.</li>
+                    <li>Satu atau lebih pengetahuan/database yang berisi
+                        informasi apapun yang berkaitan dengan tiap
+                        masalah. Beberapa bagian database mungkin
+                        tetap sedangkan yang lain ditambahkan sesuai
+                        dengan masalah yang dihadapi.</li>
+                        <li>Strategi kendali yang akan menentukan perintah
+                            dalam aturan yang mana yang akan dibandingkan
+                            dengan database dan cara menyelesaikan konflik
+                            yang muncul ketika ada lebih dari satu aturan
+                            yang cocok.
+                            </li>
+                            <li>Penggunaan aturan</li>
+            </ol>
+        <li class="point4">Strategi Kendali</li>
+            <ul>
+                <li>Syarat suatu strategi kendali yang baik adalah :</li>
+            </ul>
+            <ol>
+                <li>Menggerakkan stata (menjalankan proses)
+                    menuju solusi
+                    </li>
+                    <li>Harus sistematik</li>
+            </ol>
+            <ul>
+                <li>Kedua syarat itu akan melahirkan banyak metode
+                    pencarian</li>
+            </ul>
+        <li class="point5">Contoh Kasus</li>
+        <ul type="square">
+            <li>Contoh : Masalah Petani, Kambing, serigala dan
+                Sayuran</li>
+        </ul>
+        <ul>
+            <li>Seorang petani akan menyeberangkan seekor kambing,
+                seekor serigala dan sayuran dengan sebuah boat yang
+                melalui sungai.</li>
+                <li>Boat hanya bisa memuat petani dan satu penumpang
+                    lain (kambing, serigala atau sayuran).</li>
+                    <li>Jika ditinggalkan oleh petani tersebut, maka sayuran
+                        akan dimakan oleh kambing dan kambing akan dimakan
+                        oleh serigala.</li>
+                        <li>Bagaimana caranya agar petani, kambing, serigala dan
+                            sayuran dapat selamat sampai di seberang sungai ?</li>
+        </ul>
+
+    <ul type="square">
+        <li>Identifikasi ruang keadaan</li>
+    </ul>
+    <ol>
+        <li>Permasalahan ini dapat dilambangkan dengan
+            (kambing, serigala, sayuran, perahu).
+            </li>
+            <li>Contoh : daerah asal (0,1,1,1) = daerah asal tidak ada
+                kambing,ada serigala,ada sayuran,ada perahu</li>
+    </ol>
+
+    <ul>
+        <li>Keadaan awal & tujuan</li>
+        <dd><li type="square">Keadaan awal, pada kedua daerah : </li></dd>
+    </ul>
+
+    <ol>
+        <li>daerah asal = (1,1,1,1)</li>
+        <li>daerah seberang = (0,0,0,0)</li>
+    </ol>
+
+    <ul>
+    <dd><li type="square">Keadaan awal, pada kedua daerah : </li></dd>
+    </ul>
+
+    <ol>
+        <li>1. daerah asal = (0,0,0,0)</li>
+        <li>daerah seberang = (1,1,1,1) </li><br>
+    </ol>
+
+    <ul>
+        <li>Aturan-aturan</li>
+    </ul>
+        <img class="kasus1" src="./images/kasus 1.png" alt="">
+    
+    <ul>
+        <li>Solusi</li>
+    </ul>
+    <img class="kasus2" src="./images/kasus 2.PNG" alt="">
+
+
+
+    <footer>
+        <div class="hak">
+            <a href="https://fahmiaprian.github.io/">Kunjungi Portfolio saya..!!</a>
+            <p>Learn to code, learn to be creative.</p>
+        </div>
+    </footer>
+
+</td>
+</div>
+</table>
+</body>
+</html>
